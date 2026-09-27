@@ -1,9 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.umairxd01.twa",
-        "sha256_cert_fingerprints": ["62:BF:0C:7C:31:04:94:87:2E:04:AC:D0:69:72:B5:7C:DE:1B:FB:9C:B4:B9:AC:70:DC:FA:F8:78:77:94:56:7D"]
-      }
-    }]
-
