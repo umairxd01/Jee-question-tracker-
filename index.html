@@ -1257,9 +1257,9 @@ html[data-theme="royal"][data-sub] .bookIcon{color:var(--sc);border-color:color-
 .inwToday .inwTRow{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px}.inwToday .inwTRow:first-of-type{margin-top:8px}.inwTH{display:flex;align-items:center;gap:8px;font-weight:700;font-size:14px}.inwDot{width:10px;height:10px;border-radius:50%;display:inline-block}.inwDot.t1{background:var(--acc1)}.inwDot.t2{background:var(--acc2)}.inwTV b{font-size:26px;font-weight:800}.inwTV em{font-style:normal;color:var(--nz4);font-size:13px;margin-left:6px}.inwToday .inwMeta b{color:var(--nz5)}.inwBar.t1 i{background:var(--acc1)!important}.inwBar.t2 i{background:var(--acc2)!important}html.mono .inwBar.t1 i,html.mono .inwBar.t2 i{background:#fff!important}
 /* ===== Difficult = RED box, Redo = BLUE box (all themes) ===== */
 :root{--diffC:#d9535c;--redoC:#3dd6f5}
-html[data-theme] body .qbtn.difficult{background:linear-gradient(145deg,#1c0609,#4a0f17)!important}
+html[data-theme] body .qbtn.difficult{background:linear-gradient(145deg,#1f080b,#6a1620)!important}
 html[data-theme] body .qbtn.redo{background:linear-gradient(145deg,#082a33,#136f82)!important}
-html[data-theme] body .qbtn.difficult:not(.current){border-color:#c1262f!important;color:#f0b9bf!important;box-shadow:0 0 12px -3px rgba(193,38,47,.28)!important}
+html[data-theme] body .qbtn.difficult:not(.current){border-color:#ff5a66!important;color:#ffc2c8!important;box-shadow:0 0 12px -3px rgba(255,90,102,.5)!important}
 html[data-theme] body .qbtn.redo:not(.current){border-color:#3dd6f5!important;color:#d9fbff!important;box-shadow:0 0 12px -3px rgba(61,214,245,.55)!important}
 html[data-theme] body .statusPill.difficult{color:#e58f97;border-color:rgba(193,38,47,.6);background:rgba(193,38,47,.14)}
 html[data-theme] body .statusPill.redo{color:#9ff6ff;border-color:rgba(61,214,245,.6);background:rgba(61,214,245,.16)}
@@ -1324,6 +1324,13 @@ html body.fresh:not(.lg) .card{-webkit-backdrop-filter:none!important;backdrop-f
 .rtBtns{display:grid;gap:10px;margin-top:4px}.rtGo{height:52px;border-radius:17px;font-size:14px;font-weight:900;width:100%}
 .rtHero{text-align:center;display:grid;gap:8px;justify-items:center;padding:22px 18px;margin-bottom:8px}.rtHero b{font-size:17px}.rtHero>span{font-size:11px;color:var(--nz4);max-width:260px}.rtHeroIc{font-size:34px}
 .rtLink{background:none;border:0;color:var(--nz4);font-size:12px;font-weight:800;padding:8px;text-decoration:underline}
+/* ===== Tracker question boxes: Done colour per theme (question boxes only) ===== */
+html[data-theme]{--qd-b:#c4ff4d;--qd-t:#e6ff9a;--qd-a:#0a0a0a;--qd-z:#2a3a08;--qd-g:196,255,77}
+html[data-theme="emerald-noir"]{--qd-b:#ffb454;--qd-t:#ffe3b3;--qd-a:#150d06;--qd-z:#4a300c;--qd-g:255,180,84}
+html[data-theme="amethyst-night"]{--qd-b:#b987ff;--qd-t:#e8d8ff;--qd-a:#0f0a1c;--qd-z:#3b2268;--qd-g:185,135,255}
+html[data-theme="royal"]{--qd-b:#5cf0a6;--qd-t:#c9ffe3;--qd-a:#06130f;--qd-z:#0f4a33;--qd-g:92,240,166}
+html[data-theme] body .qbtn.done{background:linear-gradient(145deg,var(--qd-a),var(--qd-z))!important}
+html[data-theme] body .qbtn.done:not(.current){border-color:var(--qd-b)!important;color:var(--qd-t)!important;box-shadow:0 0 12px -3px rgba(var(--qd-g),.55)!important}
 /* ===== END V3 ===== */
 </style>
 </head>
