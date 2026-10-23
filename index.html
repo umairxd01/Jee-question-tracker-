@@ -1290,6 +1290,11 @@ html[data-theme] body .statusActions .stRedo.activeStatus{background:linear-grad
 .progressCircle.complete{background:var(--doneC,var(--blue))!important;box-shadow:0 0 14px -4px var(--doneC,var(--blue))}
 .progressCircle.complete:after{background:color-mix(in srgb,var(--doneC,var(--blue)) 18%,var(--nz1))}
 .progressCircle.complete span{color:var(--doneC,var(--blue));font-size:13px}
+/* ===== Performance (phones): drop hidden fixed gradient + per-card blur on non-Onyx themes ===== */
+@media (max-width:820px){
+html:not([data-theme="onyx"]) body.fresh{background:var(--bg)!important;background-attachment:scroll!important}
+html body.fresh:not(.lg) .card{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+}
 /* ===== END V3 ===== */
 </style>
 </head>
